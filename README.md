@@ -27,5 +27,5 @@ A simple and user-friendly calendar event management app that allows users to ma
 5. **Open the App**:
     Open your browser and go to http://localhost:5173 to view the app.
 
-Project Link : https://calendar-event-app-ruby.vercel.app/
+Project Link : https://calendar-event-app-wdqi.vercel.app/
 
