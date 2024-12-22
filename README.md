@@ -12,17 +12,18 @@ A simple and user-friendly calendar event management app that allows users to ma
 - **Event Conflict Detection**: Prevent overlapping events.
 - **Export Events**: Export events to JSON or CSV files.
 - **Navigation**: Navigate through the days to view or add events.
+- **Color Coding**: Apply different colors to events on the calendar.
 
 ## Instructions to Run Locally
 
 1. **Clone the repository**:
    git clone https://github.com/AbdusSamadAli/CalendarEventApp.git
 2. **Navigate to Project Directory**
-    cd my-project
+    cd my-project:
 3. **Install dependencies**
-    npm install
+    npm install:
 4. **Start the application**
-    npm run dev
+    npm run dev:
 5. **Open the App**
     Open your browser and go to http://localhost:5173 to view the app.
 
