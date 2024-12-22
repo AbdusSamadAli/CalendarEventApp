@@ -1,3 +1,3 @@
 # React + Vite
 
-my-project\public\img.jpg
+![Screenshot](./public/img.jpg)
