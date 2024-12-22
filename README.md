@@ -18,13 +18,13 @@ A simple and user-friendly calendar event management app that allows users to ma
 
 1. **Clone the repository**:
    git clone https://github.com/AbdusSamadAli/CalendarEventApp.git
-2. **Navigate to Project Directory**
-    cd my-project:
-3. **Install dependencies**
-    npm install:
-4. **Start the application**
+2. **Navigate to Project Directory**:
+    cd my-project
+3. **Install dependencies**:
+    npm install
+4. **Start the application**:
     npm run dev:
-5. **Open the App**
+5. **Open the App**:
     Open your browser and go to http://localhost:5173 to view the app.
 
 Project Link : https://calendar-event-app-ruby.vercel.app/
