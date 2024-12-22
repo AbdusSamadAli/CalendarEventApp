@@ -69,7 +69,7 @@ const Calendar = () => {
   const getDaysInMonth = (month, year) => {
     const firstDay = new Date(year, month, 1);
     const lastDay = new Date(year, month + 1, 0);
-    const days = [];
+    const days = []; 
 
     const firstDayWeekday = firstDay.getDay();
     const totalDays = lastDay.getDate();
@@ -103,7 +103,7 @@ const Calendar = () => {
         const newEventStart = new Date(newEvent.startTime);
         const newEventEnd = new Date(newEvent.endTime);
 
-        return (
+        return (  // Check if the new event overlaps with any existing event
           (newEventStart < eventEnd && newEventEnd > eventStart) ||
           (newEventEnd > eventStart && newEventStart < eventEnd)
         );
@@ -141,17 +141,17 @@ const Calendar = () => {
   };
 
   const handleDeleteEvent = (eventId) => {
-    const dateKey = selectedDate.toISOString().split("T")[0];
+    const dateKey = selectedDate.toISOString().split("T")[0];  // Get the date key for the selected date
     const updatedEvents = { ...events };
-    updatedEvents[dateKey] = updatedEvents[dateKey].filter(
+    updatedEvents[dateKey] = updatedEvents[dateKey].filter( // Remove the event with the given ID
       (event) => event.id !== eventId
     );
 
     setEvents(updatedEvents);
-    localStorage.setItem("events", JSON.stringify(updatedEvents));
+    localStorage.setItem("events", JSON.stringify(updatedEvents)); // Save the updated events to the state and localStorage
   };
 
-  const handleEditEvent = (event) => {
+  const handleEditEvent = (event) => { // Pre-fill the form with the event data for editing
     setNewEvent({
       name: event.name,
       startTime: event.startTime,
@@ -162,7 +162,7 @@ const Calendar = () => {
     setEditingEvent(event);
   };
 
-  const formatDate = (date) => {
+  const formatDate = (date) => {   // Format the date in a readable string (e.g., "Thu, Dec 22, 2024")
     return date.toLocaleString("default", {
       weekday: "short",
       month: "short",
@@ -183,7 +183,7 @@ const Calendar = () => {
         </Button>
 
         {/* Main Heading */}
-        <h2 className="text-2xl font-semibold mx-4 text-white">
+        <h2 className="text-2xl font-semibold mx-4 text-white ml-4 pr-3">
           Events for {formatDate(selectedDate)}
         </h2>
 
@@ -226,7 +226,7 @@ const Calendar = () => {
                     ? "bg-purple-400 text-black font-extrabold"
                     : ""
                 } ${
-                  isWeekend ? "bg-gray-400" : "bg-white"
+                  isWeekend ? "bg-gray-200 text-blue-800" : "bg-white"
                 } p-4 rounded-lg shadow-md hover:bg-blue-200`}
                 onClick={() => setSelectedDate(date)}
               >
