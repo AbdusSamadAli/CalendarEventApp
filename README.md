@@ -23,7 +23,7 @@ A simple and user-friendly calendar event management app that allows users to ma
 3. **Install dependencies**:
     npm install
 4. **Start the application**:
-    npm run dev:
+    npm run dev
 5. **Open the App**:
     Open your browser and go to http://localhost:5173 to view the app.
 
