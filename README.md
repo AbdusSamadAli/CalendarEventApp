@@ -21,7 +21,7 @@ A simple React-based calendar event web application. This project was containeri
 - Deployed on AWS ECS with a public IPv4 endpoint
 - Lightweight and scalable setup using Fargate (serverless containers)
 
-We used a **multi-stage build** to optimize Docker image size
+A **multi-stage build** was used to optimize Docker image size
 
 🐘 AWS Deployment (ECS + Fargate)
 Steps followed
